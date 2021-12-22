@@ -24,6 +24,11 @@ do {
 const calcularEspacio = (tamanoCamion: number, reservarUnidades: number) => tamanoCamion - reservarUnidades
 const calculaSumaNuevoArray = (nuevoArray: number[] ) => nuevoArray.reduce( (a, b) => a + b, 0);  
 
+
+/**
+ * Recoro el array para verificar los dos paquetes cumplan
+ * con el espacio que solicita el ejercicio
+ */
 for (let i = 0; i < ArrayPaquetes.length-1; i++) {
     for (let j = i+1; j < ArrayPaquetes.length; j++) {
         if(ArrayPaquetes[i] != ArrayPaquetes[j]){
